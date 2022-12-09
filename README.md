@@ -1,1 +1,1 @@
-These are 3 simple pages in HTML + an icon.
+These are 4 simple pages in HTML + an icon.
