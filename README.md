@@ -1,1 +1,1 @@
-These are 4 simple pages in HTML + an icon.
+This ia my HTML and CSS homeworks
