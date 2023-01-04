@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Python:HOW-TO.Part_1</title>
+   <style> @import "css_style/style.css" screen; </style>
+</head>
+<body>
+  <img src="../images/python-logo_1.png" alt = "image" title="python" align="right">
+  <h1 align="center">HOW-TO: Программа на Python, Часть 3</h1>
+    <ul>
+      <li><em><a href = "index_1.html">Программа на Python — часть 1</a></em></li>
+      <li><em><a href = "index_2.html">Программа на Python — часть 2</a></em></li>
+      <li><em><a href = "index_3.html">Программа на Python — часть 3</a></em></li>
+    </ul>
+  <h2 id = "sod">Содержание</h2>
+  <h3>HOW-TO: Программа на Python, Часть 3</h3>
+    <ul>
+      <li><a href = "#chapter1">Модули</a></li>
+      <li><a href = "#chapter2">Функции</a></li>
+    </ul>
+  <hr>
+  <p>В прошлый раз мы изучали списки, подстановку переменных, комментарии, сравнение и
+    присвоение, операторы <b>if</b> и <b>while</b>. Я обещал, что в этой части мы изучим модули и
+    функции. Давайте начнём.</p>
+  <h2 id="chapter1">Модули</h2>
+  <p><a href = "#sod">К содержанию</a></p>
+  <p>Модули предлагают способ расширить программирование на Python. Вы можете создать
+    свои модули, использовать те, которые поставляются с Python или которые написали
+    другие. В самом Python есть сотни модулей, которые облегчают написание программ.
+    Список модулей, поставляемых с Python, находится по адресу:<br>
+    <em><a href="http://docs.python.org/modindex.html" target="_blank"> http://docs.python.org/modindex.html.</a></em>
+    Некоторые модули предназначены для определённых
+    операционных систем, но большинство из них кроссплатформенные и работают
+    одинаково на <a href="https://ru.wikipedia.org/wiki/Linux" target="_blank">Linux</a>,
+    <a href="https://ru.wikipedia.org/wiki/Mac" target="_blank">Mac</a> и
+    <a href="https://ru.wikipedia.org/wiki/Windows" target="_blank">Microsoft Windows</a>. Для использования внешнего модуля
+    необходимо импортировать его в программу. Один из модулей, поставляемых с Python,
+    называется «random». Он даёт возможность генерировать псевдослучайные числа. Мы
+    используем этот модуль в нашем первом примере.</p>
+  <p style="font-family:courier; font-size:80%;">
+    #=======================================<br>
+    # random_example.py<br>
+    # Module example using the random module<br>
+    #=======================================<br>
+    import random<br>
+    # print 14 random integers<br>
+    for cntr in range(1,15):<br>
+    &emsp;&emsp;&ensp;print random.randint(1,10)<br>
+  <p>Давайте разберём код по строкам. Первые четыре строки — это комментарии, о которых
+  мы говорили в прошлый раз. Пятая строка говорит Python, что нужно использовать
+  модуль «random». Мы должны явно указать Python на это.</p>
+  <hr>
+  <h2 id="chapter2">Функции</h2>
+  <p><a href = "#sod">К содержанию</a></p>
+  <p>Когда мы импортировали модуль random, мы использовали функцию <b>randint()</b>. Функция
+    — это блок кода, который создан для того, чтобы вызывать его в программе, обычно,
+    более одного раза. Это упрощает работу над программой и предотвращает набор одного и
+    того же кода снова и снова. Грубо говоря, если вам нужно написать некоторый код
+    больше, чем 1-2 раза, стоит сделать его функцией. Хотя следующие два примера очень
+    простые, это хорошие примеры функций. Теперь мы хотим, скажем, взять два числа,
+    сложить их, перемножить, вычесть одно из другого, затем вывести на экран эти числа и
+    результаты одновременно. Допустим, нам нужно сделать это три раза для трёх наборов
+    чисел. Тогда наш пример будет выглядеть как код ниже.</p>
+  <p style="font-family:courier; font-size:80%;">
+    #silly example<br>
+    print '%d + %d = %d ' % (1,2,1+2)<br>
+    print '%d * %d = %d ' % (1,2,1*2)<br>
+    print '%d - %d = %d ' % (1,2,1-2)
+  </p>
+  <p style="font-family:courier; font-size:80%;">
+    print '\n'<br>
+    print '%d + %d = %d ' % (1,4,1+4)<br>
+    print '%d * %d = %d ' % (1,4,1*4)<br>
+    print '%d - %d = %d ' % (1,4,1-4)
+  </p>
+  <p style="font-family:courier; font-size:80%;">
+    print '\n'<br>
+    print '%d + %d = %d ' % (10,5,10+5)<br>
+    print '%d * %d = %d ' % (10,5,10*5)<br>
+    print '%d - %d = %d ' % (10,5,10-5)<br>
+    print '\n'
+  </p>
+  <p>Здесь нужно не только набрать много текста, но и непременно возникнут ошибки как при
+    написании, так и при внесении изменений. Вместо этого мы создадим функцию, которую
+    назовём <b><em>«DoTwo»</em></b>. Она будет каждый раз брать два числа, проводить математические
+    операции и выводить результат. Начнём с ключевого слова <b><em>«def»</em></b>, которое сигнализирует
+    о том, что мы собираемся определить функцию. После слова <b><em>«def»</em></b> добавим название
+    функции и список параметров, если таковые имеются, в круглых скобках. Эту строку
+    необходимо завершить двоеточием. Код функции набирается с отступом. Наш
+    улучшенный простой пример <u>(№2)</u> показан ниже.
+  </p>
+   <p style="font-family:courier; font-size:80%;">
+    #silly example 2...still silly, but better<br>
+    def DoTwo(num1,num2):<br>
+    &emsp;&emsp;&emsp;&emsp;print '%d + %d = %d ' % (num1,num2,num1+num2)<br>
+    &emsp;&emsp;&emsp;&emsp;print '%d * %d = %d ' % (num1,num2,num1*num2)<br>
+    &emsp;&emsp;&emsp;&emsp;print '%d - %d = %d ' % (num1,num2,num1-num2)<br>
+    &emsp;&emsp;&emsp;&emsp;print '\n'<br>
+    DoTwo(1,2)<br>
+    DoTwo(1,4)<br>
+    DoTwo(10,5)<br>
+  </p>
+  <p>Как видите, здесь написано меньше кода — 8 строк вместо 12. Если нам нужно будет чтолибо поменять в функции, мы сможем сделать это, не создавая проблем для нашей
+  программы. Чтобы вызвать функцию, нужно написать её имя и параметры.</p>
+  <a href="index_2.html"><img src="../images/left_img.jpg" align="left" alt="image" title="privies page"></a>
+  <a href=""><img src="../images/right_img.jpg" align="right" alt="image" title="next page"></a>
+  <a href="#sod"><center><img src="../images/home.png" alt="image" title="home"></center></a>
+</body>
+</html>
+
