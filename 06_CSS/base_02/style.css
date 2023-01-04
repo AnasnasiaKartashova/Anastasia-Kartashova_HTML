@@ -1,0 +1,33 @@
+        .block {
+            margin-left: auto;
+            margin-right: auto;
+            width: 50em;
+            padding: 2em;
+        }
+        .header {
+             text-align: right;
+             line-height: 0.1;
+             font-size: 14pt;
+        }
+        .head{
+            line-height: 1.5;
+            font-weight: bold;
+        }
+        .address{
+            font-style: italic;
+        }
+        .top{
+            font-weight: bold;
+            text-decoration: underline;
+            font-size: 15pt;
+        }
+        .text{
+            font-style: normal;
+            text-align: justify;
+            font-family: 'Bad Script';
+            text-indent: 35pt;
+            font-size: 13pt;
+        }
+        .end{
+            font-size: 14pt;
+        }
