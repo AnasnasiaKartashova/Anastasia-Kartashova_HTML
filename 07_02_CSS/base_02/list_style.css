@@ -1,0 +1,15 @@
+ul{
+    width: 350px;
+    list-style-type: upper-roman;
+}
+li ul{
+    list-style-type: lower-roman;
+}
+.code{
+    max-height: 80px;
+    max-width: 400px;
+    overflow: auto;
+    background-color: black;
+    color: green;
+    white-space: nowrap;
+}
