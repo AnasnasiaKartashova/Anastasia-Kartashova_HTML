@@ -8,18 +8,13 @@
     float: left;
     height: 17em;
 }
-.block_2{
+.block_2_3{
     background-color: #c9c7c7;
     width: 40em;
     margin-bottom: .2em;
     float: right;
 }
-.block_3{
-    background-color: #c9c7c7;
-    width: 40em;
-    margin-bottom: .2em;
-    float: right;
-}
+
 .block_4{
     background-color: #e8e3e3;
     width: 55em;
