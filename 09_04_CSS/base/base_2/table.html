@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+    <style>
+    table{
+    margin: auto;
+    font-size: 20px;
+    }
+    tr:not(:nth-last-child(1)) td, tr:not(:nth-child(1)) th{
+        border-bottom-style: dotted;
+    }
+    tr:not(:nth-child(1)) th, td:not(:nth-last-child(1)){
+        border-bottom: dotted;
+        border-right: dotted;
+    }
+    tr:nth-child(1){
+        background-color: #808080;
+    }
+    tr:nth-child(2n+3){
+        background-color: #d3d3d3;
+    }
+    tr:nth-child(n+2){
+        text-align: left;
+    }
+    tr:nth-last-child(1){
+        background-color: white;
+        text-align: center;
+        width: inherit;
+    }
+    tr:hover:not(:nth-last-child(1), :nth-child(1)){
+        background-color: #ffc0cb;
+    }
+    </style>
+</head>
+<body>
+ <table>
+        <tr>
+            <th>ФИО</th>
+            <th>пол</th>
+            <th>должность</th>
+            <th>дата рож.</th>
+            <th>Данные 01</th>
+            <th>Данные 02</th>
+        </tr>
+        <tr>
+            <th>Иванов Иван Иванович</th>
+            <td>М</td>
+            <td>начальник</td>
+            <td>01.01.1960</td>
+            <td>4567</td>
+            <td>3453</td>
+        </tr>
+        <tr>
+            <th>Петрова Илонна Петровна</th>
+            <td>Ж</td>
+            <td>секретарь</td>
+            <td>01.01.1989</td>
+            <td>98795</td>
+            <td>46523</td>
+        </tr>
+        <tr>
+            <th>Сидоров Илья Игоревич</th>
+            <td>М</td>
+            <td>бухгалтер</td>
+            <td>01.01.1979</td>
+            <td>743434</td>
+            <td>987979</td>
+        </tr>
+        <tr>
+            <th>Пупин Фёдор Фёдорович</th>
+            <td>М</td>
+            <td>водитель</td>
+            <td>01.01.1963</td>
+            <td>74323434</td>
+            <td>9232379</td>
+        </tr>
+        <tr>
+            <th>Крупин Сергей Иванович</th>
+            <td>М</td>
+            <td>водитель 2</td>
+            <td>01.01.1983</td>
+            <td>32345534</td>
+            <td>923123379</td>
+        </tr>
+        <tr>
+            <td colspan="6">ДАННЫЕ О СОТРУДНИКАХ</td>
+        </tr>
+    </table>
+</body>
+</html>
