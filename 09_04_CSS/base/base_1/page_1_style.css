@@ -1,0 +1,29 @@
+p{
+    border: 1px solid lightgray;
+    border-radius: 1px 10px;
+    margin: 0px;
+    width: 40em;
+}
+.links{
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 20px;
+}
+ul{
+    list-style-image: url("image/img_3.jfif");
+}
+ul li:nth-child(1):hover{
+    background-image: url("image/img_2.jfif");
+    background-position: 140px;
+    background-repeat: no-repeat;
+}
+ul li:nth-child(2):hover{
+    background-image: url("image/img_4.png");
+    background-position: 110px;
+    background-repeat: no-repeat;
+}
+ul li:nth-child(3):hover{
+    background-image: url("image/img_5.gif");
+    background-position: 60px;
+    background-repeat: no-repeat;
+}
