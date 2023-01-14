@@ -1,0 +1,68 @@
+.days{
+    width: 130px;
+    font-size: 20px;
+    background-color: #eee;
+    color: #9e9898;
+    padding: 1px 0 0 3px;
+    border: 6px solid #030303;
+    border-width: 1px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: -44px;
+    position: relative;
+    cursor: pointer;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.list{
+    display: none;
+    width: 130px;
+    font-size: 20px;
+    position: absolute;
+    z-index: 1;
+    padding: 0;
+    cursor: pointer;
+}
+.list li{
+    background-color: #eee;
+    color: #9e9898;
+    padding: 1px 0 0 3px;
+    border: 6px solid #030303;
+    border-width: 1px;
+    border-radius: 5px;
+    display: block;
+}
+.list li:hover  {background-color: #ddd;}
+.dropdown:hover .list {display: block;}
+.dropdown:hover .days {background-color: #ddd;}
+
+@media screen and (max-width: 600px){
+    .dropdown{width: 100px}
+    .days{
+        background-color: #eee;
+        border: 6px solid #030303;
+        border-width: 1px;
+        border-radius: 5px;
+        position: relative;
+        cursor: pointer
+    }
+    .list{
+        width: 150px;
+        display: none
+    }
+    list li{
+        background-color: #eee;
+        border: 6px solid #030303;
+        border-width: 1px;
+        border-radius: 5px;
+        cursor: pointer
+    }
+    .days:hover .list li{
+        display: block;
+        position: absolute;
+        left: 80%;
+        top: 90%;
+        z-index: 1 }
+}
