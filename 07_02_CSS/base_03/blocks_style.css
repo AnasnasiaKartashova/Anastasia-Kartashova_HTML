@@ -1,27 +1,22 @@
 .block_0{
     background-color: #f7f5f5;
-    width: 55em;
-    height: 28.9em;
 }
 .block_1{
-    width: 15em;
     background-color: #eee;
     float: left;
-    height: 17em;
+    width: 15em;
 }
 .block_2_3{
     background-color: #c9c7c7;
-    width: 40em;
     margin-bottom: .2em;
-    float: right;
+    margin-left: 15em;
+    padding-top: 0.1px;
+    padding-bottom: 0.1px;
 }
-
 .block_4{
     background-color: #e8e3e3;
-    width: 55em;
     clear: both;
 }
 .img{
-    background-color: #c9c7c7;
     clear: both;
 }
